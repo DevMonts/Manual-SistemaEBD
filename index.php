@@ -31,8 +31,19 @@
     </nav>
     <a href="https://app.sistemaebd.com.br/" class="bg-brown-800 text-white px-4 py-2 rounded-md font-bold">Login</a>
   </header>
+  <div class="flex justify-center py-6">
+    <form action="" method="GET" class="w-full max-w-2xl">
+      <div class="relative">
+        <input type="text" name="search" placeholder="Busque sua pergunta ou palavra chave aqui!"
+          class="w-full p-3 pl-10 rounded-full border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500">
+        <button type="submit" class="absolute left-3 top-3 text-gray-500">
+          <i class="material-icons">search</i>
+        </button>
+      </div>
+    </form>
+  </div>
   <div class="flex h-screen">
-    <aside class="w-64 bg-white p-5 shadow-md">
+    <aside class="w-64 p-5">
       <nav>
         <ul>
           <li class="py-2 text-gray-600 hover:text-blue-500"><a href="?page=page1">Página 1</a></li>

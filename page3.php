@@ -64,31 +64,31 @@
         [
           'title' => 'Usuários',
           'description' => 'Cadastro de usuário com tipo (Administrador, Professor, etc), nome completo e função na igreja. / Opção de "Formulário completo" para adicionar mais informações detalhadas.',
-          'url' => 'users_register.php'
+          'url' => 'subpages/users_register.php'
         ],
 
         [
           'title' => 'Departamentos',
           'description' => 'Lista de departamentos com nome, descrição e vínculo com turmas; incluindo a função de criar e editar. Ex.: Adultos, Jovens, Infantil, etc.',
-          'url' => 'sections.php'
+          'url' => 'subpages/sections.php'
         ],
 
         [
           'title' => 'Turmas',
           'description' => 'Cadastro de turma com nome, departamento e categoria; e visualização com número de alunos e vínculo com professores.',
-          'url' => 'classes_register.php'
+          'url' => 'subpages/classes_register.php'
         ],
 
         [
           'title' => 'Setores / Áreas',
           'description' => 'Cadastro e gerenciamento de setores que podem ser vinculados a uma ou mais igrejas.',
-          'url' => 'sectors.php'
+          'url' => 'subpages/sectors.php'
         ],
 
         [
           'title' => 'Filiais',
           'description' => 'Visualização e cadastro de filiais com nome, cidade, setor e dados do administrador.',
-          'url' => 'children.php'
+          'url' => 'subpages/children.php'
         ],
 
       ];

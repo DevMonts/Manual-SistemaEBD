@@ -64,43 +64,43 @@
         [
           'title' => 'Dados da Escola',
           'description' => 'Informações, Edição e exclusão da escola.',
-          'url' => 'school.php'
+          'url' => 'subpages/school.php'
         ],
 
         [
           'title' => 'Pontuação',
           'description' => 'Sistema de pontuação configurável para: presença, Bíblia, revista, visitante e atividade.',
-          'url' => 'score.php'
+          'url' => 'subpages/score.php'
         ],
 
         [
           'title' => 'Financeiro',
           'description' => 'Dashboard com entradas, saídas, saldo, cadastro de transações e categorias financeiras.',
-          'url' => 'finances.php'
+          'url' => 'subpages/finances.php'
         ],
 
         [
           'title' => 'Dashboard e Estatísticas',
           'description' => 'Exibe indicadores gerais da escola, gráficos de presença, visitantes, distribuição por sexo, estado civil e escolaridade para melhor acompanhamento.',
-          'url' => 'dashboard.php'
+          'url' => 'subpages/dashboard.php'
         ],
 
         [
           'title' => 'Início e Aulas',
           'description' => 'Tela inicial com banner informativo e lista de aulas cadastradas, cadastro de nova aula com data e número e exibição de turmas com pendências de preenchimento.',
-          'url' => 'main.php'
+          'url' => 'subpages/main.php'
         ],
 
         [
           'title' => 'Material de Apoio e Suporte',
           'description' => 'Acesso ao conteúdo de apoio ao professor, manual, artigos, publicações e suporte técnico.',
-          'url' => 'support.php'
+          'url' => 'subpages/support.php'
         ],
 
         [
           'title' => 'Dúvidas Frequentes (FAQ)',
           'description' => 'Como cadastrar uma nova aula? Como gerar um certificado? O que significa "turmas pendentes"? Como configurar a pontuação?',
-          'url' => 'faq.php'
+          'url' => 'subpages/faq.php'
         ],
 
       ];

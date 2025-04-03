@@ -64,19 +64,19 @@
         [
           'title' => 'Presença e Desempenho',
           'description' => 'Visualização de matrículas, quantidade de aulas, presença, visitantes e média de presença, dados por trimestre, última aula ou período personalizado.',
-          'url' => 'presences.php'
+          'url' => 'subpages/presences.php'
         ],
 
         [
           'title' => 'Consolidado por Igreja',
           'description' => 'Análise estratégica de desempenho das EBDs e exibe resumo geral das igrejas cadastradas (matriz e filiais).',
-          'url' => 'churches.php'
+          'url' => 'subpages/churches.php'
         ],
 
         [
           'title' => 'Certificados',
           'description' => 'Geração de certificados personalizados por aluno ou colaborador, incluindo a assinatura do responsável e modelo gráfico do certificado.',
-          'url' => 'certificates.php'
+          'url' => 'subpages/certificates.php'
         ]
 
       ];

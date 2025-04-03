@@ -75,7 +75,7 @@
       <div class="space-y-4">
         <?php if (!empty($filtered_pages)): ?>
           <?php foreach ($filtered_pages as $page): ?>
-            <a href="intro.php">
+            <a href="subpages/intro.php">
               <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
                 <div>
                   <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>

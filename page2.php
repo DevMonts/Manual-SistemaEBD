@@ -48,11 +48,11 @@
     <aside class="w-64 p-5">
       <nav>
         <ul>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Página 1</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Página 2</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Página 3</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Página 4</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Página 5</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Configurações</a></li>
         </ul>
       </nav>
     </aside>
@@ -60,10 +60,17 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Página 2.1', 'description' => 'Descrição'],
-        ['title' => 'Página 2.2', 'description' => 'Descrição'],
-        ['title' => 'Página 2.3', 'description' => 'Descrição'],
-        ['title' => 'Página 2.4', 'description' => 'Descrição'],
+
+        ['title' => 'Menu', 'description' => 'Ao tocar no botão "Menu", o usuário tem acesso a todas as seções do sistema de forma organizada. Esse menu lateral inclui áreas como Perfil, Cadastros, Relatórios, Configurações, Material de apoio, Suporte e a opção para sair da conta. É a forma mais completa de navegação dentro do sistema, permitindo acesso a todas as funcionalidades disponíveis.'],
+
+        ['title' => 'Início', 'description' => 'A tela "Início" apresenta um resumo das aulas cadastradas recentemente. Nessa seção, o usuário pode visualizar banners com informações úteis, como conteúdos de apoio ao professor, e conferir as lições registradas com dados de presença e ausência. Também é possível cadastrar novas aulas rapidamente, informando apenas a data e o número da lição.'],
+
+        ['title' => 'Turmas', 'description' => 'A seção "Turmas" exibe a lista completa de turmas cadastradas no sistema, organizadas por nome e categoria (por exemplo, Juniores, Primários, etc.). Cada item da lista mostra o total de alunos por turma. É possível buscar turmas pelo nome, acessar seus detalhes e realizar cadastros de novas turmas, definindo o nome, o departamento correspondente e a categoria.'],
+
+        ['title' => 'Cadastros', 'description' => 'A seção "Cadastros" é o centro de gerenciamento dos registros da Escola Bíblica Dominical. Por meio dela, o usuário pode cadastrar e editar informações relacionadas a: usuários (administradores e professores), departamentos, setores ou áreas e filiais. Essa tela é essencial para estruturar corretamente a organização da escola, permitindo o vínculo entre igrejas, turmas, setores e seus respectivos responsáveis.'],
+
+        ['title' => 'Dados', 'description' => 'A tela "Dados" oferece uma visão geral e analítica do desempenho da escola. Nela, o usuário pode acompanhar indicadores como: total de presentes, número de matriculados, alunos presentes/ausentes, visitantes, média de presença, ofertas entre outros. Além disso, são exibidos gráficos de desempenho por turma, estado civil, sexo e escolaridade, com filtros por trimestre e data. Essa funcionalidade é ideal para análises detalhadas e relatórios estratégicos.'],
+
       ];
       $filtered_pages = [];
       if (!empty($search)) {

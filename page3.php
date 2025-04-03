@@ -48,11 +48,11 @@
     <aside class="w-64 p-5">
       <nav>
         <ul>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Página 1</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Página 2</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Página 3</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Página 4</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Página 5</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Configurações</a></li>
         </ul>
       </nav>
     </aside>
@@ -60,10 +60,11 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Página 3.1', 'description' => 'Descrição'],
-        ['title' => 'Página 3.2', 'description' => 'Descrição'],
-        ['title' => 'Página 3.3', 'description' => 'Descrição'],
-        ['title' => 'Página 3.4', 'description' => 'Descrição'],
+        ['title' => 'Usuários', 'description' => 'Cadastro de usuário com tipo (Administrador, Professor, etc), nome completo e função na igreja. / Opção de "Formulário completo" para adicionar mais informações detalhadas.'],
+        ['title' => 'Departamentos', 'description' => 'Lista de departamentos com nome, descrição e vínculo com turmas; incluindo a função de criar e editar. Ex.: Adultos, Jovens, Infantil, etc.'],
+        ['title' => 'Turmas', 'description' => 'Cadastro de turma com nome, departamento e categoria; e visualização com número de alunos e vínculo com professores.'],
+        ['title' => 'Setores / Áreas', 'description' => 'Cadastro e gerenciamento de setores que podem ser vinculados a uma ou mais igrejas.'],
+        ['title' => 'Filiais', 'description' => 'Visualização e cadastro de filiais com nome, cidade, setor e dados do administrador.'],
       ];
       $filtered_pages = [];
       if (!empty($search)) {

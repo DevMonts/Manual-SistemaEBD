@@ -48,11 +48,11 @@
     <aside class="w-64 p-5">
       <nav>
         <ul>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Página 1</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Página 2</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Página 3</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Página 4</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Página 5</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Configurações</a></li>
         </ul>
       </nav>
     </aside>
@@ -60,10 +60,9 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Página 4.1', 'description' => 'Descrição'],
-        ['title' => 'Página 4.2', 'description' => 'Descrição'],
-        ['title' => 'Página 4.3', 'description' => 'Descrição'],
-        ['title' => 'Página 4.4', 'description' => 'Descrição'],
+        ['title' => 'Presença e Desempenho', 'description' => 'Visualização de matrículas, quantidade de aulas, presença, visitantes e média de presença, dados por trimestre, última aula ou período personalizado.'],
+        ['title' => 'Consolidado por Igreja', 'description' => 'Análise estratégica de desempenho das EBDs e exibe resumo geral das igrejas cadastradas (matriz e filiais).'],
+        ['title' => 'Certificados', 'description' => 'Geração de certificados personalizados por aluno ou colaborador, incluindo a assinatura do responsável e modelo gráfico do certificado.']
       ];
       $filtered_pages = [];
       if (!empty($search)) {

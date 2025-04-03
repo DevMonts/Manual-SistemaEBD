@@ -49,23 +49,18 @@
       <nav>
         <ul>
           <ul>
-            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Página 1</a></li>
-            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Página 2</a></li>
-            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Página 3</a></li>
-            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Página 4</a></li>
-            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Página 5</a></li>
+            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
+            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
+            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
+            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
+            <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Configurações</a></li>
           </ul>
       </nav>
     </aside>
     <main class="flex-1 p-10">
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
-      $pages = [
-        ['title' => 'Página 1.1', 'description' => 'Descrição'],
-        ['title' => 'Página 1.2', 'description' => 'Descrição'],
-        ['title' => 'Página 1.3', 'description' => 'Descrição'],
-        ['title' => 'Página 1.4', 'description' => 'Descrição'],
-      ];
+      $pages = [['title' => 'Introdução', 'description' => 'O Sistema EBD foi desenvolvido para facilitar a gestão da Escola Bíblica Dominical, permitindo controle de turmas, alunos, professores, aulas, pontuação, relatórios e muito mais.']];
       $filtered_pages = [];
       if (!empty($search)) {
         foreach ($pages as $page) {

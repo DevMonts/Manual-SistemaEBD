@@ -48,11 +48,11 @@
     <aside class="w-64 p-5">
       <nav>
         <ul>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Página 1</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Página 2</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Página 3</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Página 4</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Página 5</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
+          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page5.php">Configurações</a></li>
         </ul>
       </nav>
     </aside>
@@ -60,10 +60,13 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Página 5.1', 'description' => 'Descrição'],
-        ['title' => 'Página 5.2', 'description' => 'Descrição'],
-        ['title' => 'Página 5.3', 'description' => 'Descrição'],
-        ['title' => 'Página 5.4', 'description' => 'Descrição'],
+        ['title' => 'Dados da Escola', 'description' => 'Informações, Edição e exclusão da escola.'],
+        ['title' => 'Pontuação', 'description' => 'Sistema de pontuação configurável para: presença, Bíblia, revista, visitante e atividade.'],
+        ['title' => 'Financeiro', 'description' => 'Dashboard com entradas, saídas, saldo, cadastro de transações e categorias financeiras.'],
+        ['title' => 'Dashboard e Estatísticas', 'description' => 'Exibe indicadores gerais da escola, gráficos de presença, visitantes, distribuição por sexo, estado civil e escolaridade para melhor acompanhamento.'],
+        ['title' => 'Início e Aulas', 'description' => 'Tela inicial com banner informativo e lista de aulas cadastradas, cadastro de nova aula com data e número e exibição de turmas com pendências de preenchimento.'],
+        ['title' => 'Material de Apoio e Suporte', 'description' => 'Acesso ao conteúdo de apoio ao professor, manual, artigos, publicações e suporte técnico.'],
+        ['title' => 'Dúvidas Frequentes (FAQ)', 'description' => 'Como cadastrar uma nova aula? Como gerar um certificado? O que significa "turmas pendentes"? Como configurar a pontuação?'],
       ];
       $filtered_pages = [];
       if (!empty($search)) {

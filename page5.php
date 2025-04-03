@@ -48,11 +48,11 @@
     <aside class="w-64 p-5">
       <nav>
         <ul>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="index.php">Introdução</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page2.php">Menu Principal</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page3.php">Cadastros</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500"><a href="page4.php">Relatórios</a></li>
-          <li class="py-2 text-gray-600 hover:text-blue-500 font-bold"><a href="page5.php">Configurações</a></li>
+          <li class="py-2 text-gray-600 hover:text-orange-500"><a href="index.php">Introdução</a></li>
+          <li class="py-2 text-gray-600 hover:text-orange-500"><a href="page2.php">Menu Principal</a></li>
+          <li class="py-2 text-gray-600 hover:text-orange-500"><a href="page3.php">Cadastros</a></li>
+          <li class="py-2 text-gray-600 hover:text-orange-500"><a href="page4.php">Relatórios</a></li>
+          <li class="py-2 text-gray-600 hover:text-orange-500 font-bold"><a href="page5.php">Configurações</a></li>
         </ul>
       </nav>
     </aside>

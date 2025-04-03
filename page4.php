@@ -60,9 +60,25 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Presença e Desempenho', 'description' => 'Visualização de matrículas, quantidade de aulas, presença, visitantes e média de presença, dados por trimestre, última aula ou período personalizado.'],
-        ['title' => 'Consolidado por Igreja', 'description' => 'Análise estratégica de desempenho das EBDs e exibe resumo geral das igrejas cadastradas (matriz e filiais).'],
-        ['title' => 'Certificados', 'description' => 'Geração de certificados personalizados por aluno ou colaborador, incluindo a assinatura do responsável e modelo gráfico do certificado.']
+
+        [
+          'title' => 'Presença e Desempenho',
+          'description' => 'Visualização de matrículas, quantidade de aulas, presença, visitantes e média de presença, dados por trimestre, última aula ou período personalizado.',
+          'url' => 'presences.php'
+        ],
+
+        [
+          'title' => 'Consolidado por Igreja',
+          'description' => 'Análise estratégica de desempenho das EBDs e exibe resumo geral das igrejas cadastradas (matriz e filiais).',
+          'url' => 'churches.php'
+        ],
+
+        [
+          'title' => 'Certificados',
+          'description' => 'Geração de certificados personalizados por aluno ou colaborador, incluindo a assinatura do responsável e modelo gráfico do certificado.',
+          'url' => 'certificates.php'
+        ]
+
       ];
       $filtered_pages = [];
       if (!empty($search)) {
@@ -80,8 +96,10 @@
           <?php foreach ($filtered_pages as $page): ?>
             <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
               <div>
-                <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
-                <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                <a href="<?php echo $page['url']; ?>">
+                  <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
+                  <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                </a>
               </div>
             </div>
           <?php endforeach; ?>

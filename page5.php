@@ -60,13 +60,49 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Dados da Escola', 'description' => 'Informações, Edição e exclusão da escola.'],
-        ['title' => 'Pontuação', 'description' => 'Sistema de pontuação configurável para: presença, Bíblia, revista, visitante e atividade.'],
-        ['title' => 'Financeiro', 'description' => 'Dashboard com entradas, saídas, saldo, cadastro de transações e categorias financeiras.'],
-        ['title' => 'Dashboard e Estatísticas', 'description' => 'Exibe indicadores gerais da escola, gráficos de presença, visitantes, distribuição por sexo, estado civil e escolaridade para melhor acompanhamento.'],
-        ['title' => 'Início e Aulas', 'description' => 'Tela inicial com banner informativo e lista de aulas cadastradas, cadastro de nova aula com data e número e exibição de turmas com pendências de preenchimento.'],
-        ['title' => 'Material de Apoio e Suporte', 'description' => 'Acesso ao conteúdo de apoio ao professor, manual, artigos, publicações e suporte técnico.'],
-        ['title' => 'Dúvidas Frequentes (FAQ)', 'description' => 'Como cadastrar uma nova aula? Como gerar um certificado? O que significa "turmas pendentes"? Como configurar a pontuação?'],
+
+        [
+          'title' => 'Dados da Escola',
+          'description' => 'Informações, Edição e exclusão da escola.',
+          'url' => 'school.php'
+        ],
+
+        [
+          'title' => 'Pontuação',
+          'description' => 'Sistema de pontuação configurável para: presença, Bíblia, revista, visitante e atividade.',
+          'url' => 'score.php'
+        ],
+
+        [
+          'title' => 'Financeiro',
+          'description' => 'Dashboard com entradas, saídas, saldo, cadastro de transações e categorias financeiras.',
+          'url' => 'finances.php'
+        ],
+
+        [
+          'title' => 'Dashboard e Estatísticas',
+          'description' => 'Exibe indicadores gerais da escola, gráficos de presença, visitantes, distribuição por sexo, estado civil e escolaridade para melhor acompanhamento.',
+          'url' => 'dashboard.php'
+        ],
+
+        [
+          'title' => 'Início e Aulas',
+          'description' => 'Tela inicial com banner informativo e lista de aulas cadastradas, cadastro de nova aula com data e número e exibição de turmas com pendências de preenchimento.',
+          'url' => 'main.php'
+        ],
+
+        [
+          'title' => 'Material de Apoio e Suporte',
+          'description' => 'Acesso ao conteúdo de apoio ao professor, manual, artigos, publicações e suporte técnico.',
+          'url' => 'support.php'
+        ],
+
+        [
+          'title' => 'Dúvidas Frequentes (FAQ)',
+          'description' => 'Como cadastrar uma nova aula? Como gerar um certificado? O que significa "turmas pendentes"? Como configurar a pontuação?',
+          'url' => 'faq.php'
+        ],
+
       ];
       $filtered_pages = [];
       if (!empty($search)) {
@@ -84,8 +120,10 @@
           <?php foreach ($filtered_pages as $page): ?>
             <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
               <div>
-                <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
-                <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                <a href="<?php echo $page['url']; ?>">
+                  <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
+                  <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                </a>
               </div>
             </div>
           <?php endforeach; ?>

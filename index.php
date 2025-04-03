@@ -75,12 +75,14 @@
       <div class="space-y-4">
         <?php if (!empty($filtered_pages)): ?>
           <?php foreach ($filtered_pages as $page): ?>
-            <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
-              <div>
-                <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
-                <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+            <a href="intro.php">
+              <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
+                <div>
+                  <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
+                  <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                </div>
               </div>
-            </div>
+            </a>
           <?php endforeach; ?>
         <?php else: ?>
           <p class="text-red-500 font-bold text-center">Nenhum resultado encontrado.</p>

@@ -60,11 +60,37 @@
       <?php
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
-        ['title' => 'Usuários', 'description' => 'Cadastro de usuário com tipo (Administrador, Professor, etc), nome completo e função na igreja. / Opção de "Formulário completo" para adicionar mais informações detalhadas.'],
-        ['title' => 'Departamentos', 'description' => 'Lista de departamentos com nome, descrição e vínculo com turmas; incluindo a função de criar e editar. Ex.: Adultos, Jovens, Infantil, etc.'],
-        ['title' => 'Turmas', 'description' => 'Cadastro de turma com nome, departamento e categoria; e visualização com número de alunos e vínculo com professores.'],
-        ['title' => 'Setores / Áreas', 'description' => 'Cadastro e gerenciamento de setores que podem ser vinculados a uma ou mais igrejas.'],
-        ['title' => 'Filiais', 'description' => 'Visualização e cadastro de filiais com nome, cidade, setor e dados do administrador.'],
+
+        [
+          'title' => 'Usuários',
+          'description' => 'Cadastro de usuário com tipo (Administrador, Professor, etc), nome completo e função na igreja. / Opção de "Formulário completo" para adicionar mais informações detalhadas.',
+          'url' => 'users_register.php'
+        ],
+
+        [
+          'title' => 'Departamentos',
+          'description' => 'Lista de departamentos com nome, descrição e vínculo com turmas; incluindo a função de criar e editar. Ex.: Adultos, Jovens, Infantil, etc.',
+          'url' => 'sections.php'
+        ],
+
+        [
+          'title' => 'Turmas',
+          'description' => 'Cadastro de turma com nome, departamento e categoria; e visualização com número de alunos e vínculo com professores.',
+          'url' => 'classes_register.php'
+        ],
+
+        [
+          'title' => 'Setores / Áreas',
+          'description' => 'Cadastro e gerenciamento de setores que podem ser vinculados a uma ou mais igrejas.',
+          'url' => 'sectors.php'
+        ],
+
+        [
+          'title' => 'Filiais',
+          'description' => 'Visualização e cadastro de filiais com nome, cidade, setor e dados do administrador.',
+          'url' => 'children.php'
+        ],
+
       ];
       $filtered_pages = [];
       if (!empty($search)) {
@@ -82,8 +108,10 @@
           <?php foreach ($filtered_pages as $page): ?>
             <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
               <div>
-                <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
-                <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                <a href="<?php echo $page['url']; ?>">
+                  <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
+                  <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                </a>
               </div>
             </div>
           <?php endforeach; ?>

@@ -61,15 +61,35 @@
       $search = isset($_GET['search']) ? strtolower($_GET['search']) : '';
       $pages = [
 
-        ['title' => 'Menu', 'description' => 'Ao tocar no botão "Menu", o usuário tem acesso a todas as seções do sistema de forma organizada. Esse menu lateral inclui áreas como Perfil, Cadastros, Relatórios, Configurações, Material de apoio, Suporte e a opção para sair da conta. É a forma mais completa de navegação dentro do sistema, permitindo acesso a todas as funcionalidades disponíveis.'],
+        [
+          'title' => 'Menu',
+          'description' => 'Ao tocar no botão "Menu", o usuário tem acesso a todas as seções do sistema de forma organizada. Esse menu lateral inclui áreas como Perfil, Cadastros, Relatórios, Configurações, Material de apoio, Suporte e a opção para sair da conta. É a forma mais completa de navegação dentro do sistema, permitindo acesso a todas as funcionalidades disponíveis.',
+          'url' => 'menu.php'
+        ],
 
-        ['title' => 'Início', 'description' => 'A tela "Início" apresenta um resumo das aulas cadastradas recentemente. Nessa seção, o usuário pode visualizar banners com informações úteis, como conteúdos de apoio ao professor, e conferir as lições registradas com dados de presença e ausência. Também é possível cadastrar novas aulas rapidamente, informando apenas a data e o número da lição.'],
+        [
+          'title' => 'Início',
+          'description' => 'A tela "Início" apresenta um resumo das aulas cadastradas recentemente. Nessa seção, o usuário pode visualizar banners com informações úteis, como conteúdos de apoio ao professor, e conferir as lições registradas com dados de presença e ausência. Também é possível cadastrar novas aulas rapidamente, informando apenas a data e o número da lição.',
+          'url' => 'start.php'
+        ],
 
-        ['title' => 'Turmas', 'description' => 'A seção "Turmas" exibe a lista completa de turmas cadastradas no sistema, organizadas por nome e categoria (por exemplo, Juniores, Primários, etc.). Cada item da lista mostra o total de alunos por turma. É possível buscar turmas pelo nome, acessar seus detalhes e realizar cadastros de novas turmas, definindo o nome, o departamento correspondente e a categoria.'],
+        [
+          'title' => 'Turmas',
+          'description' => 'A seção "Turmas" exibe a lista completa de turmas cadastradas no sistema, organizadas por nome e categoria (por exemplo, Juniores, Primários, etc.). Cada item da lista mostra o total de alunos por turma. É possível buscar turmas pelo nome, acessar seus detalhes e realizar cadastros de novas turmas, definindo o nome, o departamento correspondente e a categoria.',
+          'url' => 'classes.php'
+        ],
 
-        ['title' => 'Cadastros', 'description' => 'A seção "Cadastros" é o centro de gerenciamento dos registros da Escola Bíblica Dominical. Por meio dela, o usuário pode cadastrar e editar informações relacionadas a: usuários (administradores e professores), departamentos, setores ou áreas e filiais. Essa tela é essencial para estruturar corretamente a organização da escola, permitindo o vínculo entre igrejas, turmas, setores e seus respectivos responsáveis.'],
+        [
+          'title' => 'Cadastros',
+          'description' => 'A seção "Cadastros" é o centro de gerenciamento dos registros da Escola Bíblica Dominical. Por meio dela, o usuário pode cadastrar e editar informações relacionadas a: usuários (administradores e professores), departamentos, setores ou áreas e filiais. Essa tela é essencial para estruturar corretamente a organização da escola, permitindo o vínculo entre igrejas, turmas, setores e seus respectivos responsáveis.',
+          'url' => 'registers.php'
+        ],
 
-        ['title' => 'Dados', 'description' => 'A tela "Dados" oferece uma visão geral e analítica do desempenho da escola. Nela, o usuário pode acompanhar indicadores como: total de presentes, número de matriculados, alunos presentes/ausentes, visitantes, média de presença, ofertas entre outros. Além disso, são exibidos gráficos de desempenho por turma, estado civil, sexo e escolaridade, com filtros por trimestre e data. Essa funcionalidade é ideal para análises detalhadas e relatórios estratégicos.'],
+        [
+          'title' => 'Dados',
+          'description' => 'A tela "Dados" oferece uma visão geral e analítica do desempenho da escola. Nela, o usuário pode acompanhar indicadores como: total de presentes, número de matriculados, alunos presentes/ausentes, visitantes, média de presença, ofertas entre outros. Além disso, são exibidos gráficos de desempenho por turma, estado civil, sexo e escolaridade, com filtros por trimestre e data. Essa funcionalidade é ideal para análises detalhadas e relatórios estratégicos.',
+          'url' => 'data.php'
+        ],
 
       ];
       $filtered_pages = [];
@@ -88,8 +108,10 @@
           <?php foreach ($filtered_pages as $page): ?>
             <div class="bg-white p-4 shadow-md rounded-lg flex items-start space-x-4">
               <div>
-                <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
-                <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                <a href="<?php echo $page['url']; ?>">
+                  <h2 class="text-lg font-bold text-orange-500"><?php echo $page['title']; ?></h2>
+                  <p class="text-gray-600 text-sm"><?php echo $page['description']; ?></p>
+                </a>
               </div>
             </div>
           <?php endforeach; ?>

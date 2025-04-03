@@ -33,6 +33,7 @@
   </header>
   <div class="flex justify-center py-6">
     <form action="" method="GET" class="w-full max-w-2xl">
+      <h1 class="text-center block text-xl font-bold mb-5">Olá, como podemos te ajudar?</h1>
       <div class="relative">
         <input type="text" name="search" placeholder="Busque sua pergunta ou palavra-chave aqui!"
           class="w-full p-3 pl-10 rounded-full border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-orange-500"

@@ -31,23 +31,23 @@
           <i class="material-icons text-base">view_sidebar</i>Barra de Navegação
         </a>
         <a href="pages/subpages/navbar/menu.php" target="content"
-          class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 px-6 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">menu</i>Menu
         </a>
         <a href="pages/subpages/navbar/start.php" target="content"
-          class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 px-6 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">cottage</i>Início
         </a>
         <a href="pages/subpages/navbar/class.php" target="content"
-          class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 px-6 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">school</i>Turmas
         </a>
         <a href="pages/subpages/navbar/registers.php" target="content"
-          class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 px-6 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">group</i>Cadastros
         </a>
         <a href="pages/subpages/navbar/data.php" target="content"
-          class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 px-6 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">assessment</i>Dados
         </a>
         <a href="pages/subpages/navbar/menu.php" target="content"

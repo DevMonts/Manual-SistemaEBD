@@ -46,7 +46,7 @@
             <h2 class="text-2xl font-bold text-orange-600 mb-4">Dashboard Financeiro</h2>
             <div class="h-1 w-16 bg-orange-400 mb-6 rounded"></div>
             <div class="flex flex-col md:flex-row gap-10 items-center">
-                <img src="assets/Finances.png" alt="Finances"
+                <img src="navbar/menu/assets/Finances.png" alt="Finances"
                     class="max-w-[260px] md:max-w-[300px] w-full rounded-xl shadow-md">
                 <div class="text-gray-700 text-lg leading-loose space-y-6 text-justify px-2 md:px-4">
                     <p>

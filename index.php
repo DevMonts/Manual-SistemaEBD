@@ -45,6 +45,11 @@
           class="flex items-center gap-2 px-9 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">article</i>Relatório
         </a>
+        </a>
+        <a href="pages/navbar/menu/relatories/birthday.php" target="content"
+          class="flex items-center gap-2 px-12 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          <i class="material-icons text-base">cake</i>Aniversariantes
+        </a>
         <a href="pages/navbar/menu/certificates.php" target="content"
           class="flex items-center gap-2 px-9 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">workspace_premium</i>Certificado

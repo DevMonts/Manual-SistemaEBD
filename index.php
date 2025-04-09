@@ -54,6 +54,10 @@
           class="flex items-center gap-2 px-12 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">school</i>Aula
         </a>
+        <a href="pages/navbar/menu/relatories/out.php" target="content"
+          class="flex items-center gap-2 px-12 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          <i class="material-icons text-base">directions_run</i>Ausentes
+        </a>
         <a href="pages/navbar/menu/certificates.php" target="content"
           class="flex items-center gap-2 px-9 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">workspace_premium</i>Certificado

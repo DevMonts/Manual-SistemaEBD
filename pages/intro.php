@@ -63,7 +63,7 @@
             <div class="h-1 w-16 bg-orange-400 mb-6 rounded"></div>
             <div class="flex flex-col md:flex-row gap-12 min-h-[300px]">
                 <div class="flex items-center justify-center flex-1">
-                    <img src="assets/Dashboard.png" alt="Dashboard" class="w-full max-w-lg rounded-xl shadow-md">
+                    <img src="navbar/menu/relatories/assets/Dashboard.png" alt="Dashboard" class="w-full max-w-lg rounded-xl shadow-md">
                 </div>
                 <div class="flex items-center flex-1">
                     <div class="text-gray-700 text-lg leading-loose space-y-6 text-justify px-2 md:px-4">

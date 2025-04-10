@@ -22,19 +22,22 @@
       class="bg-white border-r shadow-lg w-64 p-4 space-y-2 text-sm font-semibold text-gray-700 md:block hidden absolute md:relative z-50 md:z-auto top-16 md:top-0 left-0 h-full md:h-auto overflow-y-auto rounded-tr-xl md:rounded-none transition-all duration-300 ease-in-out">
       <nav class="space-y-1">
         <a href="pages/intro.php" target="content"
-          class="flex items-center gap-2 px-0 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
           <i class="material-icons text-base">play_arrow</i>
           <span>Introdução</span>
         </a>
         <div>
-          <button
-            class="flex items-center w-full gap-2 px-0 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all"
-            onclick="toggleSubmenu('submenu-nav')">
-            <i class="material-icons text-base">list</i>
-            <span>Barra de Navegação</span>
-            <i class="material-icons ml-auto text-sm">expand_more</i>
-          </button>
-          <div id="submenu-nav" class="pl-6 space-y-1 hidden">
+          <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
+            <a href="pages/navbar.php" target="content"
+              class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full">
+              <i class="material-icons text-base">list</i>
+              <span>Barra de Navegação</span>
+            </a>
+            <button onclick="toggleSubmenu('submenu-nav')" class="text-gray-500 hover:text-orange-500 p-1">
+              <i class="material-icons text-sm">expand_more</i>
+            </button>
+          </div>
+          <div id="submenu-nav" class="pl-6 space-y- hidden">
             <a href="pages/navbar/profile.php" target="content"
               class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
               <i class="material-icons text-base">person</i>Perfil
@@ -44,13 +47,16 @@
               <i class="material-icons text-base">groups</i>Cadastros
             </a>
             <div>
-              <button
-                class="flex items-center w-full gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all"
-                onclick="toggleSubmenu('submenu-reports')">
-                <i class="material-icons text-base">article</i>
-                <span>Relatórios</span>
-                <i class="material-icons ml-auto text-sm">expand_more</i>
-              </button>
+              <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
+                <a href="pages/navbar/relatories.php" target="content"
+                  class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
+                  <i class="material-icons text-base">article</i>
+                  <span>Relatórios</span>
+                </a>
+                <button onclick="toggleSubmenu('submenu-reports')" class="text-gray-500 hover:text-orange-500 p-1">
+                  <i class="material-icons text-sm">expand_more</i>
+                </button>
+              </div>
               <div id="submenu-reports" class="pl-6 space-y-1 hidden">
                 <a href="pages/navbar/relatories/birthday.php" target="content"
                   class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
@@ -75,27 +81,27 @@
               </div>
             </div>
             <a href="pages/navbar/certificates.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">workspace_premium</i>Certificado
             </a>
             <a href="pages/navbar/finances.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">attach_money</i>Financeiro
             </a>
             <a href="pages/navbar/children.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">polyline</i>Filiais
             </a>
             <a href="pages/navbar/settings.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">settings</i>Configurações
             </a>
             <a href="pages/navbar/material.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">collections_bookmark</i>Material de apoio
             </a>
             <a href="pages/navbar/support.php" target="content"
-              class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+              class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
               <i class="material-icons text-base">handshake</i>Suporte
             </a>
           </div>

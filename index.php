@@ -27,7 +27,7 @@
         </a>
         <a href="pages/navbar.php" target="content"
           class="flex items-center gap-2 px-0 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">view_sidebar</i>Barra de Navegação
+          <i class="material-icons text-base">list</i>Barra de Navegação
         </a>
         <a href="pages/navbar/profile.php" target="content"
           class="flex items-center gap-2 px-3 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">

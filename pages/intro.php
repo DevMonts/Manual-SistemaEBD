@@ -3,83 +3,67 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Introdução</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
-    <nav class="max-w-4xl mx-auto px-4 mb-8">
-        <h2 class="text-xl font-semibold text-gray-700 mb-4">Índice</h2>
-        <ul class="list-disc list-inside space-y-1 text-blue-600">
-            <li><a href="#intro" class="hover:underline">Introdução</a></li>
-            <li><a href="#menu" class="hover:underline">Barra de Navegação</a></li>
-            <li><a href="#registers" class="hover:underline">Cadastros</a></li>
-            <li><a href="#registers" class="hover:underline">Relatórios</a></li>
-            <li><a href="#settings" class="hover:underline">Configurações</a></li>
-        </ul>
-    </nav>
-
-    <main class="px-4 max-w-4xl mx-auto space-y-8">
-        <section id="intro" class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-2xl font-semibold text-amber-600 mb-4">Introdução</h2>
-            <p>Este manual foi criado para orientar os usuários na utilização eficiente do Sistema EBD, uma plataforma desenvolvida para facilitar a gestão da Escola Bíblica Dominical em igrejas de diferentes tamanhos e estruturas. O sistema é acessível por meio de aplicativo ou navegador e oferece ferramentas completas para o controle de turmas, acompanhamento da frequência, análise de dados, emissão de relatórios, certificação e muito mais.</p>
-            <p class="mt-4">Com uma interface amigável e intuitiva, o Sistema EBD permite que líderes, professores e administradores gerenciem todas as atividades relacionadas à EBD de forma integrada. Entre os principais benefícios estão:</p>
-            <ul class="list-disc list-inside mt-2 space-y-1">
-                <li>Cadastro e organização de usuários, turmas e departamentos</li>
-                <li>Controle de aulas e presença dos alunos</li>
-                <li>Análise de dados estatísticos e geração de gráficos</li>
-                <li>Emissão de relatórios trimestrais e certificados personalizados</li>
-                <li>Gerenciamento de igrejas filiais, setores e configurações específicas</li>
+    <main class="max-w-4xl mx-auto p-6">
+        <div class="bg-white shadow-md rounded-2xl p-8">
+            <h1 class="text-3xl font-bold text-orange-600 mb-4">Introdução ao Sistema EBD</h1>
+            <p class="mb-4">
+                Seja bem-vindo ao Manual do Sistema EBD! Aqui você vai encontrar explicações detalhadas e simples sobre cada funcionalidade do sistema, com imagens, exemplos e orientações passo a passo.
+            </p>
+            <p class="mb-6">
+                Este manual foi criado para ajudar todos os tipos de usuários, mesmo aqueles que não têm experiência com tecnologia. Nosso objetivo é tornar o uso do sistema o mais fácil e intuitivo possível.
+            </p>
+            <hr class="my-6">
+            <h2 class="text-2xl font-semibold text-orange-500 mb-3">Vídeos explicativos</h2>
+            <p class="mb-4">
+                Abaixo você pode assistir aos vídeos introdutórios que mostram o funcionamento do sistema na prática.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube-nocookie.com/embed/xBzVLtBGKA8?si=_-lAmGmw0JUaVQQx" title="Vídeo 1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube-nocookie.com/embed/5Ec26WE2kZ8?si=SCgf4ooSUKnCJcJA" title="Vídeo 2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p class="mb-6">
+                Você também pode acessar a playlist completa clicando no link abaixo:
+                <br>
+                <a href="#" target="_blank" class="text-orange-600 hover:underline">
+                    Acessar a playlist completa no YouTube
+                </a>
+            </p>
+            <hr class="my-6">
+            <h2 class="text-2xl font-semibold text-orange-500 mb-3">O que é possível fazer com o Sistema EBD</h2>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+                <li>Cadastrar igrejas, congregações (filiais), turmas e alunos</li>
+                <li>Permitir que cada professor realize a chamada da sua própria turma pelo aplicativo</li>
+                <li>Realizar chamadas com pontuação automática por presença, Bíblia, lição, visitantes e atividade</li>
+                <li>Controlar visitantes, aniversariantes e frequência individual dos alunos</li>
+                <li>Emitir certificados personalizados para alunos e colaboradores</li>
+                <li>Gerar relatórios automáticos semanais, mensais e trimestrais</li>
+                <li>Ter uma gestão centralizada com controle por filiais (multiigrejas)</li>
+                <li>Link direto do WhatsApp dos alunos e professores para envio de mensagem</li>
+                <li>Definir permissões específicas por função (admin, professor, secretário, etc.)</li>
             </ul>
-            <p class="mt-4">Este guia está dividido em seções para facilitar a navegação por cada uma das funcionalidades disponíveis no sistema. Recomendamos a leitura completa para que todos os recursos possam ser aproveitados ao máximo.</p>
-        </section>
-        <section id="menu" class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-2xl font-semibold text-amber-600 mb-4">Barra de Navegação</h2>
-            <p>A barra de navegação está localizada na parte inferior do aplicativo e contém os atalhos para as principais seções do sistema. Ele é composto pelos seguintes ícones:</p>
-            <ul class="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Início:</strong> Tela com banner de apoio, lista das últimas aulas registradas e botão para cadastrar uma nova aula.</li>
-                <li><strong>Turmas:</strong> Lista de todas as turmas cadastradas com nome, categoria e número de alunos. Possui busca e acesso rápido ao cadastro de novas turmas.</li>
-                <li><strong>Cadastros:</strong> Acesso direto à tela de gerenciamento de usuários, departamentos, turmas, setores e filiais.</li>
-                <li><strong>Dados:</strong> Exibe gráficos e indicadores sobre a frequência, visitantes, média, estado civil, sexo e escolaridade dos alunos.</li>
-                <li><strong>Menu Lateral:</strong> Acesso ao menu completo com todas as funcionalidades disponíveis, incluindo relatórios, configurações e materiais de apoio.</li>
+            <hr class="my-6">
+            <h2 class="text-2xl font-semibold text-orange-500 mb-3">Como este manual está organizado</h2>
+            <p class="mb-3">As páginas do manual estão divididas de acordo com as principais áreas do sistema:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+                <li><strong>Introdução</strong>
+                <li><strong>Barra de Navegação</strong>
+                <li><strong>Perfil</strong>
+                <li><strong>Cadastro</strong>
+                <li><strong>Relatórios</strong>
+                <li><strong>Certificado</strong>
+                <li><strong>Financeiro</strong>
+                <li><strong>Filiais</strong>
+                <li><strong>Configurações</strong>
+                <li><strong>Material de Apoio</strong>
+                <li><strong>Suporte</strong>
             </ul>
-            <p class="mt-2">Esse menu é fixo e está sempre visível, facilitando a navegação entre as principais áreas do sistema.</p>
-        </section>
-        <section id="registers" class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-2xl font-semibold text-amber-600 mb-4">Cadastros</h2>
-            <p>A seção de cadastros é responsável pela organização estrutural da EBD. Através dela, os administradores podem criar e manter atualizadas as seguintes informações:</p>
-            <ul class="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Usuários:</strong> Cadastro de administradores, professores e outros perfis. Inclui dados como nome completo, telefone, função e vínculo com a igreja.</li>
-                <li><strong>Departamentos:</strong> Estrutura organizacional para categorizar turmas (ex: Infantil, Adolescentes, Adultos).</li>
-                <li><strong>Turmas:</strong> Grupos de alunos que fazem parte de determinado departamento. Cada turma possui nome, categoria e quantidade de alunos.</li>
-                <li><strong>Setores:</strong> Divisões regionais para agrupar igrejas com base em localização ou administração compartilhada.</li>
-                <li><strong>Filiais:</strong> Outras igrejas vinculadas à sede principal. Cada filial tem sua própria gestão dentro do sistema.</li>
-            </ul>
-            <p class="mt-2">Manter os cadastros atualizados garante o funcionamento correto das funcionalidades do sistema, como presença, relatórios e certificados.</p>
-        </section>
-        <section id="registers" class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-2xl font-semibold text-amber-600 mb-4">Relatórios</h2>
-            <p>O sistema disponibiliza diversos relatórios que auxiliam no acompanhamento da frequência, desempenho e engajamento dos alunos. São eles:</p>
-            <ul class="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Presença por aluno:</strong> Mostra o número de aulas, presença, ausência, visitantes e média do aluno por trimestre ou período personalizado.</li>
-                <li><strong>Relatório geral da igreja:</strong> Apresenta dados consolidados por igreja, seja matriz ou filiais, com totais de alunos, visitantes e ofertas.</li>
-                <li><strong>Certificados:</strong> Emissão de certificados automáticos com nome, função e assinatura personalizada.</li>
-                <li><strong>Relatórios de aniversariantes:</strong> Lista de membros que fazem aniversário no mês.</li>
-                <li><strong>Gráficos estatísticos:</strong> Análises visuais de presença, perfil dos alunos e desempenho geral da escola bíblica.</li>
-            </ul>
-            <p class="mt-2">Esses relatórios são exportáveis e ideais para prestação de contas, planejamento de ações e apresentação em reuniões administrativas.</p>
-        </section>
-        <section id="settings" class="bg-white p-6 rounded-xl shadow">
-            <h2 class="text-2xl font-semibold text-amber-600 mb-4">Configurações</h2>
-            <p>Na seção de configurações, é possível personalizar o sistema conforme as necessidades da igreja. As principais opções incluem:</p>
-            <ul class="list-disc list-inside mt-2 space-y-1">
-                <li><strong>Dados da escola:</strong> Nome, cidade, estado, e-mail, telefone e identidade visual da igreja.</li>
-                <li><strong>Pontuação:</strong> Configuração dos pesos atribuídos à presença, bíblia, revista, visitante e atividades. A soma total deve ser 10 pontos.</li>
-                <li><strong>Configurações administrativas:</strong> Parâmetros para controle de permissões, visibilidade e comportamento do sistema.</li>
-                <li><strong>Formulários adicionais:</strong> Campos extras para detalhamento de usuários ou igrejas conforme necessidades locais.</li>
-            </ul>
-            <p class="mt-2">Essa flexibilidade torna o sistema adaptável a diferentes contextos e práticas pedagógicas.</p>
-        </section>
+        </div>
     </main>
 </body>
 

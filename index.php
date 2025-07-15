@@ -25,8 +25,9 @@ if (isset($_GET['open'])) {
   <header class="bg-orange-500 py-4 px-4 flex justify-between items-center sticky top-0 z-50 shadow">
     <button id="toggleSidebar" class="text-white md:hidden mr-4">
       <i class="material-icons">menu</i>
-    </button>
-    <img src="https://sistemaebd.com.br/wp-content/uploads/2023/01/Sistema-EBD-BR-EXT.png" class="h-8 hidden md:block">
+    </button><a href="/index.php">
+      <img src="https://sistemaebd.com.br/wp-content/uploads/2023/01/Sistema-EBD-BR-EXT.png" class="h-8 hidden md:block">
+    </a>
     <form method="GET" action="search.php" class="flex flex-1 max-w-full mx-2 md:mx-auto md:max-w-2xl">
       <input type="text" name="q" placeholder="Sistema EBD" class="w-full px-5 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400" value="<?php echo isset($_GET['q']) ? htmlspecialchars($_GET['q']) : ''; ?>" />
       <button type="submit" class="bg-white hover:bg-gray-200 px-4 py-3 rounded-r-lg border border-l-0 border-gray-300"><i class="material-icons text-base">search</i></button>
@@ -143,84 +144,97 @@ if (isset($_GET['open'])) {
               class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
               <i class="material-icons text-base">add_to_queue</i>Turmas
             </a>
-            <a href="pages/users.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">add</i>Usuários
-            </a>
+            <div>
+              <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
+                <a href="pages/users.php" target="content"
+                  class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
+                  <i class="material-icons text-base">add</i>
+                  <span>Usuários</span>
+                </a>
+                <button onclick="toggleSubmenu('users_subpages')" class="text-gray-500 hover:text-orange-500 p-1">
+                  <i class="material-icons text-sm">expand_more</i>
+                </button>
+              </div>
+              <div id="users_subpages" class="pl-6 space-y-1 hidden">
+                <a href="pages/permissions.php" target="content"
+                  class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                  <i class="material-icons text-base">lock</i>Permissões
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div>
-          <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
-            <a href="pages/relatories.php" target="content"
-              class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
-              <i class="material-icons text-base">article</i>
-              <span>Relatórios</span>
-            </a>
-            <button onclick="toggleSubmenu('relatories_subpages')" class="text-gray-500 hover:text-orange-500 p-1">
-              <i class="material-icons text-sm">expand_more</i>
-            </button>
+          <div>
+            <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
+              <a href="pages/relatories.php" target="content"
+                class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
+                <i class="material-icons text-base">article</i>
+                <span>Relatórios</span>
+              </a>
+              <button onclick="toggleSubmenu('relatories_subpages')" class="text-gray-500 hover:text-orange-500 p-1">
+                <i class="material-icons text-sm">expand_more</i>
+              </button>
+            </div>
+            <div id="relatories_subpages" class="pl-6 space-y-1 hidden">
+              <a href="pages/birthday.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">cake</i>Aniversariantes
+              </a>
+              <a href="pages/lesson.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">school</i>Aula
+              </a>
+              <a href="pages/out.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">directions_run</i>Ausentes
+              </a>
+              <a href="pages/churches.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">church</i>Igrejas
+              </a>
+              <a href="pages/data.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">casino</i>Dados
+              </a>
+            </div>
           </div>
-          <div id="relatories_subpages" class="pl-6 space-y-1 hidden">
-            <a href="pages/birthday.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">cake</i>Aniversariantes
-            </a>
-            <a href="pages/lesson.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">school</i>Aula
-            </a>
-            <a href="pages/out.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">directions_run</i>Ausentes
-            </a>
-            <a href="pages/churches.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">church</i>Igrejas
-            </a>
-            <a href="pages/data.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">casino</i>Dados
-            </a>
+          <a href="pages/certificates.php" target="content"
+            class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+            <i class="material-icons text-base">workspace_premium</i>Certificado
+          </a>
+          <a href="pages/finances.php" target="content"
+            class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+            <i class="material-icons text-base">attach_money</i>Financeiro
+          </a>
+          <a href="pages/children.php" target="content"
+            class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+            <i class="material-icons text-base">polyline</i>Filiais
+          </a>
+          <div>
+            <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
+              <a href="pages/settings.php" target="content"
+                class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
+                <i class="material-icons text-base">settings</i>
+                <span>Configurações</span>
+              </a>
+              <button onclick="toggleSubmenu('settings_subpages')" class="text-gray-500 hover:text-orange-500 p-1">
+                <i class="material-icons text-sm">expand_more</i>
+              </button>
+            </div>
+            <div id="settings_subpages" class="pl-6 space-y-1 hidden">
+              <a href="pages/score.php" target="content"
+                class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
+                <i class="material-icons text-base">sports_esports</i>Pontuação
+              </a>
+            </div>
           </div>
-        </div>
-        <a href="pages/certificates.php" target="content"
-          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">workspace_premium</i>Certificado
-        </a>
-        <a href="pages/finances.php" target="content"
-          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">attach_money</i>Financeiro
-        </a>
-        <a href="pages/children.php" target="content"
-          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">polyline</i>Filiais
-        </a>
-        <div>
-          <div class="flex items-center justify-between py-2 hover:bg-gray-100 rounded-md transition-all group">
-            <a href="pages/settings.php" target="content"
-              class="flex items-center gap-2 text-sm font-semibold text-gray-700 group-hover:text-orange-500 w-full pr-2">
-              <i class="material-icons text-base">settings</i>
-              <span>Configurações</span>
-            </a>
-            <button onclick="toggleSubmenu('settings_subpages')" class="text-gray-500 hover:text-orange-500 p-1">
-              <i class="material-icons text-sm">expand_more</i>
-            </button>
-          </div>
-          <div id="settings_subpages" class="pl-6 space-y-1 hidden">
-            <a href="pages/score.php" target="content"
-              class="flex items-center gap-2 py-2 hover:text-orange-500 transition">
-              <i class="material-icons text-base">sports_esports</i>Pontuação
-            </a>
-          </div>
-        </div>
-        <a href="pages/material.php" target="content"
-          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">collections_bookmark</i>Material de Apoio
-        </a>
-        <a href="pages/support.php" target="content"
-          class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
-          <i class="material-icons text-base">handshake</i>Suporte
-        </a>
+          <a href="pages/material.php" target="content"
+            class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+            <i class="material-icons text-base">collections_bookmark</i>Material de Apoio
+          </a>
+          <a href="pages/support.php" target="content"
+            class="flex items-center gap-2 py-2 rounded-md hover:bg-gray-100 hover:text-orange-500 transition-all">
+            <i class="material-icons text-base">handshake</i>Suporte
+          </a>
       </nav>
     </aside>
     <section class="flex-1 h-full">

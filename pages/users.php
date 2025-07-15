@@ -24,7 +24,10 @@
             <ul class="list-disc list-inside space-y-2 mb-6">
                 <li><strong>Adicionar novo usuário:</strong> nome completo, e-mail, telefone, cargo e permissão</li>
                 <li><strong>Vincular a turmas:</strong> o usuário pode ser associado a uma ou mais turmas</li>
-                <li><strong>Definir nível de acesso:</strong> permissões diferenciadas para cada perfil (ex: professor, suporte, admin)</li>
+                <li><strong>Definir nível de acesso:</strong> permissões diferenciadas para cada perfil (professor sem ou com cadastro de aluno, secretário de turma, secretário geral, coordenador e administrador). <a href="pages/permissions.php" target="_blank" class="text-orange-600 hover:underline">
+                        Clique aqui para mais detalhes sobre os níveis de permissão de usuário.
+                    </a>
+                </li>
             </ul>
             <hr class="my-6" />
             <h2 class="text-2xl font-semibold text-orange-500 mb-3">Exemplo visual</h2>

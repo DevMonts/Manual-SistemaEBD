@@ -30,7 +30,7 @@
             <p class="mb-6">
                 Você também pode acessar a playlist completa clicando no link abaixo:
                 <br>
-                <a href="#" target="_blank" class="text-orange-600 hover:underline">
+                <a href="https://www.youtube.com/watch?v=5Ec26WE2kZ8&list=PL1AdtD9ARN5S890il4aW2d-BEoqOAVTg6" target="_blank" class="text-orange-600 hover:underline">
                     Acessar a playlist completa no YouTube
                 </a>
             </p>
